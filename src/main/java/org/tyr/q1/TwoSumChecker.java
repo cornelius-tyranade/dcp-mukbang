@@ -9,13 +9,18 @@ public class TwoSumChecker {
         Map<Integer, Integer> hmComplement = new HashMap<>();
 
         for (int i = 0; i < nums.length; i++) {
+            // Calculate complement
             int complementVal = target - nums[i];
 
+            // Check if hashmap contains complement
             if (hmComplement.containsKey(complementVal)) {
+                // Return complement index and current index
                 return new int[]{hmComplement.get(complementVal), i};
             }
+            // Put current number and index inside hashmap
             hmComplement.put(nums[i], i);
         }
+
         throw new IllegalArgumentException("No two sum solution");
     }
 
