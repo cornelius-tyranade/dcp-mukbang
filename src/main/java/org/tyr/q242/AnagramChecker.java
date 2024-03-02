@@ -1,7 +1,7 @@
 package org.tyr.q242;
 
-public class AnagramValidator {
-    public static boolean validateAnagram(String s, String t) {
+public class AnagramChecker {
+    public static boolean isAnagram(String s, String t) {
         int[] count = new int[26];
 
         // Count the frequency of characters in string s
@@ -25,7 +25,7 @@ public class AnagramValidator {
     }
 
     public static void main(String[] args) {
-        System.out.println(validateAnagram("anagram", "nagaram"));
-        System.out.println(validateAnagram("rat", "car"));
+        System.out.println(isAnagram("anagram", "nagaram"));
+        System.out.println(isAnagram("rat", "car"));
     }
 }
