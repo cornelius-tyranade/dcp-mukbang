@@ -7,6 +7,7 @@ import java.util.Map;
 public class RomanToIntegerConverter {
 
     public static int convertRomanToIntOriginal(String s) {
+        // Set pair of roman and integer
         Map<Character, Integer> hs = new HashMap<>();
         hs.put('I', 1);
         hs.put('V', 5);
@@ -19,6 +20,7 @@ public class RomanToIntegerConverter {
         int p = s.length() - 1;
         int r = 0;
 
+        // Loop from back
         while (p >= 0) {
             char item1 = s.charAt(p);
             int itemVal1 = hs.get(item1);
@@ -28,8 +30,10 @@ public class RomanToIntegerConverter {
                 char item2 = s.charAt(p - 1);
                 int itemVal2 = hs.get(item2);
 
+                // Check if the next roman value is less than current one
                 if (itemVal2 < itemVal1) {
                     r -= itemVal2;
+                    // Skip current pointer
                     p--;
                 }
             }

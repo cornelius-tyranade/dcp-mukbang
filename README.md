@@ -9,6 +9,9 @@
 ### **[13] Roman to Integer**
 #### Given a roman numeral, convert it to an integer. Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
+### **[53] Maximum Subarray**
+#### Given an integer array nums, find the subarray with the largest sum, and return its sum. The O(N) solution is called Kadane's Algorithm.
+
 ### **[217] Contains Duplicate** ✅
 #### Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
