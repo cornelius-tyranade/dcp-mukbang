@@ -33,6 +33,7 @@ public class RomanToIntegerConverter {
                 // Check if the next roman value is less than current one
                 if (itemVal2 < itemVal1) {
                     r -= itemVal2;
+
                     // Skip current pointer
                     p--;
                 }

@@ -3,16 +3,19 @@
 ### **[1] Two Sum** ✅
 Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
-### **[9] Palindrome Number**
+### **[2] Add Two Numbers** ✅
+You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
+
+### **[9] Palindrome Number** ✅
 Given an integer x, return true if x is a palindrome, and false otherwise.
 
-### **[13] Roman to Integer**
+### **[13] Roman to Integer** ✅
 Given a roman numeral, convert it to an integer. Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
-### **[27] Remove Element**
+### **[27] Remove Element** ✅
 Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 
-### **[53] Maximum Subarray**
+### **[53] Maximum Subarray** ✅
 Given an integer array nums, find the subarray with the largest sum, and return its sum. The O(N) solution is called Kadane's Algorithm.
 
 ### **[217] Contains Duplicate** ✅
