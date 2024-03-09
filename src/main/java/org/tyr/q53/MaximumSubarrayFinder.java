@@ -2,6 +2,7 @@ package org.tyr.q53;
 
 public class MaximumSubarrayFinder {
 
+    // Kadane's Algorithm
     public static int maxSubArray(int[] nums) {
         // Set default maxSum
         int maxSum = nums[0];

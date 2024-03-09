@@ -55,25 +55,55 @@ public class TwoNumberAdder {
         return result;
     }
 
+    public static ListNode addTwoNumbers(ListNode l1, ListNode l2) {
+        ListNode dummyHead = new ListNode(0);
+        ListNode tail = dummyHead;
+        int carry = 0;
+
+        // Iterate as long as l1 and l2 has value or carry is not 0
+        while (l1 != null || l2 != null || carry != 0) {
+            // Get l1 and l2 value
+            int digit1 = (l1 != null) ? l1.val : 0;
+            int digit2 = (l2 != null) ? l2.val : 0;
+
+            // Sum digit 1 and digit 2 and get carry
+            int sum = digit1 + digit2 + carry;
+            int digit = sum % 10;
+            carry = sum / 10;
+
+            // Add new node
+            ListNode newNode = new ListNode(digit);
+            tail.next = newNode;
+            tail = tail.next;
+
+            // Get next list node
+            l1 = (l1 != null) ? l1.next : null;
+            l2 = (l2 != null) ? l2.next : null;
+        }
+
+        // Return by skipping first head
+        return dummyHead.next;
+    }
+
     public static void main(String[] args) {
         ListNode ls11 = new ListNode(2, new ListNode(4, new ListNode(3)));
         ListNode ls12 = new ListNode(5, new ListNode(6, new ListNode(4)));
-        addTwoNumbersOriginal(ls11, ls12).print();
+        addTwoNumbers(ls11, ls12).print();
 
         ListNode ls21 = new ListNode(0);
         ListNode ls22 = new ListNode(0);
-        addTwoNumbersOriginal(ls21, ls22).print();
+        addTwoNumbers(ls21, ls22).print();
 
         ListNode ls31 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9)))))));
         ListNode ls32 = new ListNode(9, new ListNode(9, new ListNode(9, new ListNode(9))));
-        addTwoNumbersOriginal(ls31, ls32).print();
+        addTwoNumbers(ls31, ls32).print();
 
         ListNode ls41 = new ListNode(9, new ListNode(9));
         ListNode ls42 = new ListNode(9);
-        addTwoNumbersOriginal(ls41, ls42).print();
+        addTwoNumbers(ls41, ls42).print();
 
         ListNode ls51 = new ListNode(2, new ListNode(4, new ListNode(9)));
         ListNode ls52 = new ListNode(5, new ListNode(6, new ListNode(4, new ListNode(9))));
-        addTwoNumbersOriginal(ls51, ls52).print();
+        addTwoNumbers(ls51, ls52).print();
     }
 }

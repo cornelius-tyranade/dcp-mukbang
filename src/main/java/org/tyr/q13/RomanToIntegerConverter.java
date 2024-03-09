@@ -7,7 +7,7 @@ import java.util.Map;
 public class RomanToIntegerConverter {
 
     public static int convertRomanToIntOriginal(String s) {
-        // Set pair of roman and integer
+        // Set a pair of roman and integer
         Map<Character, Integer> hs = new HashMap<>();
         hs.put('I', 1);
         hs.put('V', 5);

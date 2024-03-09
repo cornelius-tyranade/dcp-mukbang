@@ -18,6 +18,9 @@ Given an integer array nums and an integer val, remove all occurrences of val in
 ### **[53] Maximum Subarray** ✅
 Given an integer array nums, find the subarray with the largest sum, and return its sum. The O(N) solution is called Kadane's Algorithm.
 
+### **[169] Majority Element** ✅
+Given an array nums of size n, return the majority element. The majority element is the element that appears more than ⌊n / 2⌋ times. You may assume that the majority element always exists in the array.
+
 ### **[217] Contains Duplicate** ✅
 Given an integer array nums, return true if any value appears at least twice in the array, and return false if every element is distinct.
 
