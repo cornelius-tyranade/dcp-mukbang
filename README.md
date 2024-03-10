@@ -12,6 +12,9 @@ Given an integer x, return true if x is a palindrome, and false otherwise.
 ### **[13] Roman to Integer** ✅
 Given a roman numeral, convert it to an integer. Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M.
 
+### **[26] Remove Duplicates from Sorted Array** ✅
+Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+
 ### **[27] Remove Element** ✅
 Given an integer array nums and an integer val, remove all occurrences of val in nums in-place. The order of the elements may be changed. Then return the number of elements in nums which are not equal to val.
 
